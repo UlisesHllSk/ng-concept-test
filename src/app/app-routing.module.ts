@@ -9,7 +9,11 @@ const routes: Routes = [
   {
     path: 'routing-module-2',
     loadChildren: './modules/routing-module-2/routing-module-2.module#RoutingModule2Module'
-  }
+  },
+  {
+    path: 'dynamic-component',
+    loadChildren: './modules/dynamic-component-test/dynamic-component.module#DynamicComponentModule'
+  },
 ];
 
 @NgModule({
