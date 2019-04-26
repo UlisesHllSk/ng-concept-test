@@ -8,24 +8,4 @@ import { computed, observable } from 'mobx-angular';
 })
 export class AppComponent {
   title = 'ng-concept-test';
-
-  @observable
-  private _computedProperty = `computedProperty`;
-
-  private _watchedProperty = `watchedProperrty`;
-
-  @computed
-  get computedProperty() {
-    console.log('computedProperty');
-    return this._computedProperty;
-  }
-
-  get watchedProperrty() {
-    console.log('watchedProperrty');
-    return this._watchedProperty;
-  }
-
-  changeComputedProperty() {
-    this._computedProperty = 'changed';
-  }
 }

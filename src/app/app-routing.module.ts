@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'dynamic-component',
     loadChildren: './modules/dynamic-component-test/dynamic-component.module#DynamicComponentModule'
   },
+  {
+    path: 'computed-watched-properties',
+    loadChildren: './modules/computed-watched-properties/computed-watched-properties.module#ComputedWatchedPropertiesModule'
+  },
 ];
 
 @NgModule({

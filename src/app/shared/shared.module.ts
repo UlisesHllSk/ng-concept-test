@@ -1,10 +1,14 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SinglentonService } from '../core/services/singlenton.service';
+import { MobxAngularModule } from 'mobx-angular';
 
 @NgModule({
     declarations: [],
-    imports: [ CommonModule ],
+    imports: [
+        CommonModule,
+        MobxAngularModule,
+    ],
     exports: [],
     providers: [],
 })
